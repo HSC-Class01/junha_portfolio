@@ -1,28 +1,171 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="강준하의 포트폴리오. AI 기반 리서치와 데이터 분석 프로젝트 및 학습 기록을 소개합니다." />
-<title>Kang Junha | Portfolio</title>
-<style>
-:root{--sky:#70c8f3;--blue:#1557a6;--ink:#10243a;--muted:#63758a;--line:#dce8f2;--paper:#f5faff;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#eaf2f9;color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}
-a{color:inherit;text-decoration:none}.tag{display:inline-flex;align-items:center;padding:6px 10px;border-radius:999px;background:#e6f5ff;color:#1765a5;font-size:11px;font-weight:800;letter-spacing:.08em}.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 17px;border-radius:12px;font-size:13px;font-weight:750}.btn.primary{background:#1557a6;color:white}.btn.ghost{border:1px solid #c9d9e7;color:#1557a6}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:800;color:#438fc0}.section-title{font-size:27px;letter-spacing:-.04em;margin:9px 0}.muted{color:var(--muted);line-height:1.7}.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.tile{background:#f3f9fe;border:1px solid #e0edf6;border-radius:18px;padding:22px}.tile h3{margin:8px 0;font-size:17px}.tile p{margin:0;color:#657a8e;font-size:13px;line-height:1.65}.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 5%;border-bottom:1px solid #e8eff5}.brand{font-weight:900;letter-spacing:-.04em}.navlinks{display:flex;gap:23px;font-size:12px;color:#58718a;font-weight:700}.hero{padding:70px 7% 54px}.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.05;letter-spacing:-.065em;margin:14px 0}.hero p{max-width:620px}.section{padding:48px 7%;border-top:1px solid #edf2f6}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.report-card{border:1px solid #dce9f3;border-radius:18px;padding:22px;background:linear-gradient(145deg,#f8fcff,#edf7ff)}.report-card .mini{font-size:10px;color:#5795bf;font-weight:900;letter-spacing:.12em}.report-card h3{font-size:19px;margin:9px 0}.report-card a{font-size:12px;color:#1557a6;font-weight:800}.pillrow{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}.pill{font-size:10px;padding:6px 9px;background:#e3f2fc;color:#326b94;border-radius:999px;font-weight:700}.timeline{border-left:2px solid #cce5f6;margin-left:7px;padding-left:22px;display:grid;gap:20px}.timeline strong{font-size:14px}.timeline small{display:block;color:#7b8ea1;margin-top:4px}.footer{padding:24px 7%;background:#f6faff;color:#71869a;font-size:11px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-.c2{background:#f6f8fb}.c2 .nav{background:#102b49;color:#fff;border:0}.c2 .navlinks{color:#c8d7e7}.c2 .brand{color:#fff}.c2 .hero{background:linear-gradient(115deg,#102b49 0%,#1557a6 62%,#70c8f3 140%);color:white}.c2 .hero .eyebrow{color:#9bdcff}.c2 .hero p{color:#d8e8f6}.c2 .btn.primary{background:#70c8f3;color:#0b3158}.c2 .btn.ghost{border-color:#7ba8cd;color:white}.c2 .section{background:white}.c2 .tile,.c2 .report-card{background:#f7f9fc;border-color:#e3e9f0}.c2 .tag{background:#e9f1fa;color:#1557a6}
-.certificate{display:flex;flex-direction:column;gap:10px;min-height:100%;background:linear-gradient(145deg,#f8fcff,#edf7ff);border:1px solid #dce9f3;border-radius:18px;padding:22px}.certificate .issuer{font-size:10px;font-weight:900;letter-spacing:.12em;color:#5795bf}.certificate h3{font-size:18px;line-height:1.45;margin:0}.certificate p{font-size:12px;line-height:1.65;color:#657a8e;margin:0}.certificate .meta{font-size:11px;color:#71869a;margin-top:auto}.certificate .actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.certificate .actions a{display:inline-flex;align-items:center;padding:9px 12px;border-radius:10px;background:#1557a6;color:#fff;font-size:11px;font-weight:800}.certificate .actions a.secondary{background:transparent;border:1px solid #c9d9e7;color:#1557a6}.c2 .certificate{background:#f7f9fc;border-color:#e3e9f0}
-@media(max-width:720px){.nav{padding:17px 5%;align-items:flex-start;gap:12px}.navlinks{gap:10px;flex-wrap:wrap;justify-content:flex-end;font-size:10px}.hero{padding:48px 6% 38px}.section{padding:36px 6%}.grid2,.cards{grid-template-columns:1fr}.section-head{display:block}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kang Junha's portfolio — data analysis project and AI ethics certification." />
+  <title>Kang Junha | Portfolio</title>
+  <style>
+    :root{--navy:#102b49;--blue:#1557a6;--sky:#70c8f3;--ink:#172b40;--muted:#687b8f;--line:#e3eaf1;--paper:#f5f8fc;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:76px}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans KR",sans-serif}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1080px,88%);margin:0 auto}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(16,43,73,.97);backdrop-filter:blur(12px);color:#fff}
+    .nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-size:14px;font-weight:900;letter-spacing:.08em;white-space:nowrap}
+    .brand span{color:var(--sky)}
+    .navlinks{display:flex;align-items:center;gap:27px;font-size:11px;font-weight:800;letter-spacing:.12em;color:#d0dce8}
+    .navlinks a:hover{color:var(--sky)}
+    .hero{background:linear-gradient(118deg,#102b49 0%,#1557a6 70%,#287bb5 100%);color:white;padding:92px 0 86px}
+    .eyebrow{font-size:10px;letter-spacing:.2em;font-weight:900;text-transform:uppercase;color:#4c94c4}
+    .hero .eyebrow{color:#9bdcff}
+    h1{font-size:clamp(43px,7vw,76px);line-height:1.07;letter-spacing:-.065em;margin:20px 0 18px}
+    .hero-copy{max-width:610px;color:#d9e8f5;font-size:15px;line-height:1.9;margin:0}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border-radius:9px;font-size:12px;font-weight:850;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--sky);color:#103252}
+    .btn-outline{border:1px solid #8aa9c5;color:#fff}
+    section{padding:72px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:28px}
+    .section-number{font-size:10px;letter-spacing:.18em;font-weight:900;color:#5c9ac5}
+    h2{font-size:30px;letter-spacing:-.045em;margin:8px 0 0}
+    .section-intro{max-width:430px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}
+    .profile-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:15px;padding:26px}
+    .profile-lead{font-size:17px;line-height:1.8;letter-spacing:-.025em;margin:0 0 13px;font-weight:700}
+    .body-copy{font-size:13px;line-height:1.9;color:var(--muted);margin:0}
+    .profile-meta{display:grid;gap:17px}
+    .meta-item small{display:block;color:#8a9aaa;font-size:9px;font-weight:900;letter-spacing:.15em;margin-bottom:6px}
+    .meta-item strong{font-size:13px;line-height:1.6}
+    .category-label{display:inline-flex;padding:6px 9px;border-radius:5px;background:#eaf4fb;color:#286b9e;font-size:9px;font-weight:900;letter-spacing:.1em}
+    .project-card{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:28px}
+    .project-card h3{font-size:21px;letter-spacing:-.04em;margin:13px 0 9px}
+    .project-card p{font-size:13px;line-height:1.85;color:var(--muted);margin:0;max-width:650px}
+    .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+    .tag{font-size:10px;color:#526d85;background:#f0f4f8;padding:7px 9px;border-radius:5px;font-weight:750}
+    .project-link{white-space:nowrap;background:var(--navy);color:white;padding:13px 15px;border-radius:8px;font-size:11px;font-weight:850}
+    .credential-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .credential-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:25px;display:flex;flex-direction:column;min-height:230px}
+    .credential-card .issuer{font-size:9px;color:#5c91b7;letter-spacing:.16em;font-weight:900}
+    .credential-card h3{font-size:18px;line-height:1.5;letter-spacing:-.025em;margin:15px 0 8px}
+    .credential-card p{font-size:12px;line-height:1.8;color:var(--muted);margin:0}
+    .credential-foot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:auto;padding-top:22px}
+    .date{font-size:10px;color:#8494a4}
+    .text-link{font-size:11px;color:var(--blue);font-weight:900}
+    .contact{background:#102b49;color:white;border-radius:16px;padding:32px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .contact h3{font-size:22px;letter-spacing:-.04em;margin:0 0 8px}
+    .contact p{font-size:12px;line-height:1.7;color:#c4d5e5;margin:0}
+    footer{padding:25px 0;color:#8797a7;font-size:10px}
+    .footer-inner{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+    @media(max-width:700px){
+      .wrap{width:88%}.nav{height:auto;min-height:66px;align-items:flex-start;padding:18px 0;flex-direction:column;gap:13px}
+      .navlinks{gap:17px;flex-wrap:wrap;font-size:9px}.hero{padding:66px 0 60px}
+      section{padding:52px 0}.section-head{display:block}.section-intro{margin-top:13px}
+      .profile-grid,.credential-grid{grid-template-columns:1fr}.project-card{grid-template-columns:1fr}
+      .project-link{justify-self:start}.contact{align-items:flex-start;flex-direction:column}
+    }
+  </style>
 </head>
 <body>
-<main id="c2" class="c2">
-<nav class="nav"><div class="brand">KANG JUNHA <span style="color:#70c8f3">/ PORTFOLIO</span></div><div class="navlinks"><a href="#about2">ABOUT</a><a href="#reports2">REPORTS</a><a href="#cert2">CREDENTIALS</a><a href="#activity2">ACTIVITIES</a></div></nav>
-<header class="hero"><div class="eyebrow">PORTFOLIO · PROFILE & PROJECTS</div><h1>분석하고,<br>실행하고,<br>가치를 만듭니다.</h1><p>AI 기반 리서치와 데이터 분석 프로젝트를 중심으로 경험과 결과물을 정리한 포트폴리오입니다.</p><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:24px"><a class="btn primary" href="https://hsc-class01.github.io/JH_NONGSIM/" target="_blank" rel="noreferrer">대표 프로젝트 보기 ↗</a><a class="btn ghost" href="https://github.com/kangjunha03" target="_blank" rel="noreferrer">GitHub ↗</a></div></header>
-<section class="section" id="about2"><div class="eyebrow">01 — PROFILE</div><h2 class="section-title">About Junha</h2><div class="grid2"><div><p class="muted">CV 기반으로 학력, 경험, 보유 역량 및 커리어 목표를 요약하는 소개 영역입니다. 핵심 정보를 빠르게 파악할 수 있도록 구성합니다.</p><div class="pillrow"><span class="pill">PROFILE</span><span class="pill">EDUCATION</span><span class="pill">SKILLS</span></div></div><div class="tile"><h3>Professional Links</h3><p>GitHub · LinkedIn</p><div style="margin-top:14px"><a class="btn primary" href="https://github.com/kangjunha03" target="_blank" rel="noreferrer">GitHub Profile ↗</a></div></div></div></section>
-<section class="section" id="reports2"><div class="eyebrow">02 — SELECTED WORK</div><h2 class="section-title">AI-Generated Reports</h2><div class="cards"><div class="report-card"><div class="mini">01 / FINANCE</div><h3>농심 재무분석 Dashboard</h3><p class="muted">DART 공시 기반 재무 데이터와 수익성·안정성 지표, Peer Firms 비교.</p><div class="pillrow"><span class="pill">DART</span><span class="pill">Dashboard</span><span class="pill">Financial Analysis</span></div><p style="margin-top:18px"><a href="https://hsc-class01.github.io/JH_NONGSIM/" target="_blank" rel="noreferrer">프로젝트 확인 ↗</a></p></div><div class="tile"><div class="eyebrow">MORE TO COME</div><h3>추가 보고서</h3><p>향후 자동화 기업분석, 산업 리서치, 데이터 시각화 결과물을 프로젝트 단위로 추가합니다.</p></div></div></section>
-<section class="section" id="cert2"><div class="eyebrow">03 — CREDENTIALS</div><h2 class="section-title">Qualifications & Certifications</h2><div class="cards"><div class="tile"><h3>Certifications</h3><p>자격증명 / 발급기관 / 취득일</p></div><div class="certificate"><div class="issuer">UNESCO · COURSERA · AI ETHICS</div><h3>Global MOOC on the Ethics of AI</h3><p>UNESCO 인증 및 Coursera 제공 온라인 강좌. UNESCO와 LG AI Research의 협력으로 개발된 AI 윤리 교육 과정입니다.</p><div class="meta">수료자: 강준하 · 수료일: 2026. 11. 16.</div><div class="actions"><a class="secondary" href="https://coursera.org/verify/F60J0SPPAXIK" target="_blank" rel="noreferrer">수료증 인증 ↗</a></div></div></div></section>
-<section class="section" id="activity2"><div class="eyebrow">04 — EXPERIENCE</div><h2 class="section-title">Activities</h2><div class="timeline"><div><strong>교내 활동</strong><small>역할과 성과 중심으로 정리</small></div><div><strong>공모전 및 대외 활동</strong><small>참여 배경 · 기여 내용 · 결과</small></div></div></section>
-<footer class="footer"><span>KANG JUNHA · PORTFOLIO</span><span>Professional / Structured / Evidence-based</span></footer>
-</main>
+  <div class="topbar">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home">KANG JUNHA <span>/ PORTFOLIO</span></a>
+      <div class="navlinks">
+        <a href="#profile">PROFILE</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#certifications">CERTIFICATIONS</a>
+        <a href="#contact">CONTACT</a>
+      </div>
+    </nav>
+  </div>
+
+  <header class="hero" id="home">
+    <div class="wrap">
+      <div class="eyebrow">PORTFOLIO · 2026</div>
+      <h1>데이터를 읽고<br>가치를 전달합니다.</h1>
+      <p class="hero-copy">분석 과정과 결과를 명확하게 구조화하고, 이해하기 쉬운 형태로 전달하는 프로젝트를 정리합니다. 아래에서 주요 프로젝트와 학습 이력을 확인할 수 있습니다.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">프로젝트 보기 ↓</a>
+        <a class="btn btn-outline" href="https://github.com/kangjunha03" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="profile">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="section-number">01 / PROFILE</div><h2>Profile</h2></div>
+        <p class="section-intro">관심 분야와 작업 방향을 간결하게 소개합니다.</p>
+      </div>
+      <div class="profile-grid">
+        <article class="panel">
+          <div class="category-label">INTRODUCTION</div>
+          <p class="profile-lead">분석을 통해 정보를 정리하고, 결과를 실제로 활용할 수 있는 형태로 만드는 데 관심이 있습니다.</p>
+          <p class="body-copy">이 포트폴리오는 현재 공개 가능한 프로젝트와 교육 이력을 중심으로 구성했습니다. 각 항목은 확인 가능한 결과물과 공식 인증 링크를 통해 살펴볼 수 있습니다.</p>
+        </article>
+        <aside class="panel profile-meta">
+          <div class="meta-item"><small>FOCUS</small><strong>Data Analysis · Business Research</strong></div>
+          <div class="meta-item"><small>PORTFOLIO FORMAT</small><strong>Projects · Credentials</strong></div>
+          <div class="meta-item"><small>CODE & WORK</small><strong><a class="text-link" href="https://github.com/kangjunha03" target="_blank" rel="noopener noreferrer">GitHub Profile ↗</a></strong></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="section-number">02 / SELECTED WORK</div><h2>Projects</h2></div>
+        <p class="section-intro">프로젝트를 주제와 활용 기술에 따라 분류했습니다. 현재 공개된 대표 작업을 소개합니다.</p>
+      </div>
+      <article class="project-card">
+        <div>
+          <div class="category-label">BUSINESS · FINANCIAL DATA ANALYSIS</div>
+          <h3>농심 재무분석 Dashboard</h3>
+          <p>DART 공시 데이터를 바탕으로 기업의 재무 정보를 정리하고, 주요 재무 지표와 Peer Firms 비교를 대시보드 형태로 시각화한 프로젝트입니다.</p>
+          <div class="tags">
+            <span class="tag">DART</span><span class="tag">Financial Analysis</span><span class="tag">Data Visualization</span><span class="tag">Dashboard</span>
+          </div>
+        </div>
+        <a class="project-link" href="https://hsc-class01.github.io/JH_NONGSIM/" target="_blank" rel="noopener noreferrer">프로젝트 열기 ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="wrap">
+      <div class="section-head">
+        <div><div class="section-number">03 / LEARNING & CREDENTIALS</div><h2>Certifications</h2></div>
+        <p class="section-intro">공식적으로 확인할 수 있는 교육 수료 이력을 정리했습니다.</p>
+      </div>
+      <div class="credential-grid">
+        <article class="credential-card">
+          <div class="issuer">UNESCO × LG AI RESEARCH · COURSERA</div>
+          <h3>Global MOOC on the Ethics of AI</h3>
+          <p>AI 윤리의 주요 개념과 책임 있는 AI 활용을 다루는 온라인 교육 과정입니다.</p>
+          <div class="credential-foot">
+            <span class="date">Completed · 2026.11.16</span>
+            <a class="text-link" href="https://coursera.org/verify/F60J0SPPAXIK" target="_blank" rel="noopener noreferrer">수료 인증 확인 ↗</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact">
+        <div><h3>Contact & Code</h3><p>프로젝트 코드와 작업 기록은 GitHub에서 확인할 수 있습니다.</p></div>
+        <a class="btn btn-primary" href="https://github.com/kangjunha03" target="_blank" rel="noopener noreferrer">GitHub 방문 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap footer-inner"><span>KANG JUNHA · PORTFOLIO</span><span>© 2026 Kang Junha. All rights reserved.</span></div>
+  </footer>
 </body>
 </html>
